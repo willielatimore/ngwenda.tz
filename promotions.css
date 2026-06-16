@@ -1,0 +1,443 @@
+/* ===== PROMOTIONS PAGE STYLES ===== */
+
+/* Promotions Hero */
+.promotions-hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.promotions-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,193,7,0.05) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.promotions-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.promotions-hero-title i {
+  color: #ffc107;
+  margin-right: 15px;
+}
+
+.promotions-hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.8);
+  position: relative;
+  z-index: 1;
+}
+
+/* Add Promotion Card */
+.add-promotion-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0f0c29, #1a1535);
+}
+
+.add-promotion-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.12);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.add-promotion-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,193,7,0.3);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card-header-custom {
+  background: linear-gradient(135deg, rgba(255,193,7,0.15), rgba(255,193,7,0.05));
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.card-header-custom i {
+  font-size: 3rem;
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.card-header-custom h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.card-header-custom p {
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+}
+
+.card-body-custom {
+  padding: 30px;
+}
+
+.promo-input {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.promo-input:focus {
+  background: rgba(255,255,255,0.12);
+  border-color: #ffc107;
+  box-shadow: 0 0 0 3px rgba(255,193,7,0.2);
+  color: white;
+}
+
+.promo-input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.form-floating label {
+  color: rgba(255,255,255,0.7);
+}
+
+.form-floating label i {
+  margin-right: 8px;
+}
+
+.btn-add-promotion {
+  width: 100%;
+  background: linear-gradient(135deg, #ffc107, #ff9f00);
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-add-promotion:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,193,7,0.3);
+}
+
+/* Active Promotions Section */
+.active-promotions-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0a0a0a, #12121a);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.section-header h2 i {
+  color: #ffc107;
+  margin-right: 12px;
+}
+
+.section-header p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+}
+
+.section-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffc107, #ff9f00);
+  margin: 20px auto 0;
+  border-radius: 3px;
+}
+
+/* Promotion Cards */
+.promotion-card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+}
+
+.promotion-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,193,7,0.3);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+}
+
+.promotion-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ffc107;
+  color: #1a1a2e;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.promotion-icon {
+  background: linear-gradient(135deg, rgba(255,193,7,0.15), rgba(255,193,7,0.05));
+  padding: 30px;
+  text-align: center;
+}
+
+.promotion-icon i {
+  font-size: 3rem;
+  color: #ffc107;
+}
+
+.promotion-content {
+  padding: 20px;
+}
+
+.promotion-category {
+  display: inline-block;
+  background: rgba(255,193,7,0.15);
+  color: #ffc107;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.promotion-title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.promotion-discount {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.promotion-description {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.promotion-expiry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 20px;
+}
+
+.promotion-expiry i {
+  color: #ffc107;
+}
+
+.promotion-expiry.expired {
+  color: #dc3545;
+}
+
+.promotion-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-delete-promo {
+  flex: 1;
+  background: rgba(220,53,69,0.15);
+  border: 1px solid rgba(220,53,69,0.3);
+  color: #ff6b6b;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-delete-promo:hover {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.btn-claim {
+  flex: 1;
+  background: linear-gradient(135deg, #ffc107, #ff9f00);
+  border: none;
+  color: #1a1a2e;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-claim:hover {
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgba(255,193,7,0.3);
+}
+
+/* No Promotions Message */
+.no-promotions-message {
+  background: rgba(255,255,255,0.04);
+  border-radius: 24px;
+  padding: 60px 20px;
+}
+
+.no-promotions-message i {
+  color: #ffc107;
+  margin-bottom: 20px;
+}
+
+.no-promotions-message h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.no-promotions-message p {
+  color: rgba(255,255,255,0.5);
+}
+
+/* Footer Link */
+.footer-link {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+}
+
+/* ===== LOGIN MODAL STYLES ===== */
+.login-modal-content {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border: 1px solid rgba(255,193,7,0.3);
+  border-radius: 20px;
+  color: white;
+}
+
+.login-modal-content .modal-header {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+}
+
+.login-modal-content .modal-header i {
+  color: #ffc107;
+  margin-right: 10px;
+}
+
+.login-input {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.login-input:focus {
+  background: rgba(255,255,255,0.12);
+  border-color: #ffc107;
+  box-shadow: 0 0 0 3px rgba(255,193,7,0.2);
+  color: white;
+}
+
+.login-input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+/* Admin badge on cards when logged in */
+.admin-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ffc107;
+  color: #1a1a2e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  z-index: 2;
+}
+/* Responsive */
+@media (max-width: 767px) {
+  .promotions-hero {
+    padding: 50px 0 40px;
+  }
+  
+  .promotions-hero-title {
+    font-size: 2rem;
+  }
+  
+  .promotions-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .card-header-custom h3 {
+    font-size: 1.4rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .promotion-title {
+    font-size: 1.1rem;
+  }
+  
+  .promotion-discount {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .promotions-hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-header-custom {
+    padding: 20px;
+  }
+  
+  .card-body-custom {
+    padding: 20px;
+  }
+  
+  .promotion-actions {
+    flex-direction: column;
+  }
+}
